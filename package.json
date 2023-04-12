@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "nx": "15.9.2",
-    "@nrwl/workspace": "15.9.2"
+    "@nrwl/workspace": "15.9.2",
+    "@nrwl/node": "15.9.2"
   }
 }
