@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "cube-scrambler",
-  "defaultProject": "cube-scrambler",
+  "npmScope": "speedcube-scrambler",
+  "defaultProject": "speedcube-scrambler",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",

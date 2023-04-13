@@ -1,23 +1,23 @@
 {
-  "name": "cube-scrambler",
+  "name": "speedcube-scrambler",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/cube-scrambler/src",
+  "sourceRoot": "libs/speedcube-scrambler/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/libs/cube-scrambler",
-        "main": "libs/cube-scrambler/src/index.ts",
-        "tsConfig": "libs/cube-scrambler/tsconfig.lib.json",
-        "assets": ["libs/cube-scrambler/*.md"]
+        "outputPath": "dist/libs/speedcube-scrambler",
+        "main": "libs/speedcube-scrambler/src/index.ts",
+        "tsConfig": "libs/speedcube-scrambler/tsconfig.lib.json",
+        "assets": ["libs/speedcube-scrambler/*.md"]
       }
     },
     "publish": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "node tools/scripts/publish.mjs cube-scrambler {args.ver} {args.tag}"
+        "command": "node tools/scripts/publish.mjs speedcube-scrambler {args.ver} {args.tag}"
       },
       "dependsOn": ["build"]
     },
@@ -25,15 +25,15 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/cube-scrambler/**/*.ts"]
+        "lintFilePatterns": ["libs/speedcube-scrambler/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/libs/cube-scrambler"],
+      "outputs": ["coverage/libs/speedcube-scrambler"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/libs/cube-scrambler"
+        "reportsDirectory": "../../coverage/libs/speedcube-scrambler"
       }
     }
   },
