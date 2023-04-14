@@ -33,7 +33,7 @@ const scramble = scrambler.getRandomScramble();
 Get a random OLL scramble:
 
 ```
-const scramble = getOllScramble();
+const scramble = scrambler.getOllScramble();
 ```
 
 Get an OLL scramble from two possible cases:
@@ -43,7 +43,23 @@ import { olls } from './3x3x3';
 
 const possibleOlls = olls.filter((oll) => oll.name === '1' || oll.name === '2');
 
-const scramble = getOllScramble(possibleOlls);
+const scramble = scrambler.getOllScramble(possibleOlls);
+```
+
+Get a random PLL scramble:
+
+```
+const scramble = scrambler.getPllScramble();
+```
+
+Get an OLL scramble from two possible cases:
+
+```
+import { plls } from './3x3x3';
+
+const possiblePlls = plls.filter((pll) => pll.name === '1' || pll.name === '2');
+
+const scramble = scrambler.getPllScramble(possiblePlls);
 ```
 
 ## Building
