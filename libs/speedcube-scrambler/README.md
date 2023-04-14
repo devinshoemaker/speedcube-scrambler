@@ -12,6 +12,40 @@ The logic for this scrambler is forked from [csTimer](https://github.com/cs0x7f/
   - Random WCA scramble
   - Random OLL scramble with filter
 
+## Usage
+
+### 3x3x3
+
+First, initialize the scrambler:
+
+```
+import { Scramble3x3x3 } from './3x3x3';
+
+const scrambler = new Scramble3x3x3();
+```
+
+Get a random WCA scramble:
+
+```
+const scramble = scrambler.getRandomScramble();
+```
+
+Get a random OLL scramble:
+
+```
+const scramble = getOllScramble();
+```
+
+Get an OLL scramble from two possible cases:
+
+```
+import { olls } from './3x3x3';
+
+const possibleOlls = olls.filter((oll) => oll.name === '1' || oll.name === '2');
+
+const scramble = getOllScramble(possibleOlls);
+```
+
 ## Building
 
 Run `nx build speedcube-scrambler` to build the library.
