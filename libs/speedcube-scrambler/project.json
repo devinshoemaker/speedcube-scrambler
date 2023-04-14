@@ -35,6 +35,12 @@
         "passWithNoTests": true,
         "reportsDirectory": "../../coverage/libs/speedcube-scrambler"
       }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional"
+      }
     }
   },
   "tags": []
